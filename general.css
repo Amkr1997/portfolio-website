@@ -1,5 +1,7 @@
 html {
   font-size: 62.5%;
+  /*overflow-x: hidden;
+  scroll-behavior: smooth;*/
 }
 
 body {
@@ -11,17 +13,25 @@ body {
   font-size: 1.8rem;
   font-weight: 400;
   color: #333;
+
+  /*positioned in relative to body*
+  overflow-x: hidden;*/
+}
+
+.wrapper {
+  /*positioned in relative to body*/
+  overflow-x: hidden;
 }
 
 .container {
-  padding: 0 3.2rem;
   max-width: 120rem;
+  padding: 0 3.2rem;
   margin: 0 auto;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  column-gap: 6.4rem;
   gap: 9.6rem;
   align-items: center;
   /* column-gap: 6.4rem;
@@ -42,7 +52,7 @@ body {
 .heading-primary {
   font-size: 5.2rem;
   line-height: 1.04;
-  margin-bottom: 8.4rem;
+  margin-bottom: 7.2rem;
 }
 
 .heading-secondary {
@@ -55,10 +65,13 @@ body {
 .heading-teritary {
   font-size: 3rem;
   line-height: 1.2;
-  margin-bottom: 3.2rem;
+  margin-bottom: 2rem;
 }
 
-.btn {
+.btn,
+.btn.link,
+.btn:visited {
+  display: inline-block;
   font-size: inherit;
   font-weight: 600;
   text-decoration: none;
@@ -67,4 +80,6 @@ body {
   padding: 1.8rem 4rem;
   border-radius: 1.1rem;
   cursor: pointer;
+
+  transition: all 0.5s;
 }
