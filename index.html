@@ -1,179 +1,317 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <script defer src="/script.js"></script>
+
     <title>Aman Portfolio</title>
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="header">
-        <a href="#">
-            <img src="/images/linkedin dp (2).jpg" alt="website-logo" class="logo">
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+  </head>
+  <div class="wrapper">
+    <body>
+      <header class="header sticky" id="header-section">
+        <!--add nav-open class afterwards-->
+        <a href="#" class="header-logo">
+          <img
+            src="/images/linkedin dp (2) cropped.jpg"
+            alt="website-logo"
+            class="logo-img"
+          />
+          <span class="logo-text">aman khare</span>
         </a>
-        <div class="nav">
-            <ul class="main-nav">
-                <li><a href="#" class="nav-elements">Home</a></li>
-                <li><a href="#" class="nav-elements">About</a></li>
-                <li><a href="#" class="nav-elements">Contact</a></li>
-                <li><a href="#" class="nav-elements nav-cta">Projects</a></li>
-            </ul>
-        </div>
-    </header>
-
-    <main>
-        <section class="section-hero">
-            <div class="hero">
-                <div class="hero-text-box">
-                    <h1 class="heading-primary">Hello, I am Aman Khare</h1>
-                    <p class="hero-description">An engineering grad, learning development right now and building projects.</p>
-                    <a href="#" class="btn btn-cta">Visit Projects</a>
-                </div>
-                
-                <div class="hero-image-box">
-                    <img src="/images/linkedin dp (2).jpg" alt="hero-img">
-                </div>
-            </div>
-        </section>
-
-        <section class="section-about-us">
-            <h2 class="heading-secondary">About Me</h2>
-            <p class="about-tagline">Here you will find some information about me such as what I do where I work what my skills are.</p>
-            <div class="container">
-                <div class="description-box">
-                    <p class="brief-description">
-                        Hello, Nice to meet you.
-
-                        I am a Frontend web developer, I build websites and web application because I like to create stuff specially where both building and design comes together, You can also check some of my work in projects section also.
-
-                        I also like to write and share content in the form of blog posts, Which you can check in blogs section as well,
-                        Usually I write about the Web development technologies, languages, new trends in the industry, etc.
-                        So that it can help people from the dev community.
-
-                        Feel free to connect and follow me on linkedIn and Twitter as well. 
-
-                        Right now I open for the job oppourtunities related to front-end developement where i can contribute, learn and grow as well.
-                        If you have an oppourtunity which matches my current skillsets, Then feel free to contact me.
-                    </p>
-                </div>
-
-                <div class="skills-box">
-                    <p class="skill">html</p>
-                    <p class="skill">css</p>
-                    <p class="skill">javascript</p>
-                    <p class="skill">React</p>
-                    <p class="skill">Redux</p>
-                    <p class="skill">Git</p>
-                    <p class="skill">Github</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-projects">
-            <h2 class="heading-secondary">Projects</h2>
-            <p class="project-tagline">Here you will find some of my recent work which i have done in the area of developement.</p>
-            <div class="projects">
-                <div class="project-img">
-                    <img src="/images/traffic-sign-ge4b75f6ef_640.png" alt="no image for right now">
-                </div>
-                
-                <div class="project-desc">
-                    <p class="description-project">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit nisi modi eligendi incidunt dicta iure</p>
-                    <a href="#" class="btn btn-visit">visit</a>
-                </div>
-
-                <div class="project-desc">
-                    <p class="description-project">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit nisi modi eligendi incidunt dicta iure</p>
-                    <a href="#" class="btn btn-visit">visit</a>
-                </div>
-
-                <div class="project-img">
-                    <img src="/images/traffic-sign-ge4b75f6ef_640.png" alt="no image for right now">
-                </div>
-
-                <div class="project-img">
-                    <img src="/images/traffic-sign-ge4b75f6ef_640.png" alt="no image for right now">
-                </div>
-                
-                <div class="project-desc">
-                    <p class="description-project">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit nisi modi eligendi incidunt dicta iure</p>
-                    <a href="#" class="btn btn-visit">visit</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-contact">
-            <h2 class="heading-secondary">contact</h2>
-            <p class="conatct-tagline">
-                Feel free to contact me by simply pushing the send button below. I will get back to you as soon as possible.
-            </p>
-
-            <form action="#" class="contact-cta">
-                <div>
-                    <label for="Full-Name">Full Name</label>
-                    <input
-                      id="Full-Name"
-                      type="text"
-                      placeholder="Aman Khare"
-                      required
-                    />
-                  </div>
-  
-                  <div>
-                    <label for="email">Email Address</label>
-                    <input
-                      id="email"
-                      type="email"
-                      placeholder="me@example.com"
-                      required
-                    />
-                  </div>
-
-                  <div>
-                    <label for="text">Message</label>
-                    <input
-                      id="msg"
-                      type="text"
-                      placeholder="I will reach to you as soon as possible"
-                      required
-                    />
-                  </div>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <a href="#">
-            <img src="/images/linkedin dp (2).jpg" alt="footer-logo" class="logo">
-        </a>
-
-        <p class="tagline">Thank you for visiting</p>
-
-        <ul class="social-links">
+        <nav class="nav">
+          <ul class="main-nav">
+            <li><a href="#header-section" class="nav-elements">Home</a></li>
+            <li><a href="#about-section" class="nav-elements">About</a></li>
+            <li><a href="#contact-section" class="nav-elements">Contact</a></li>
             <li>
-              <a href="#" class="footer-link"
-                ><ion-icon class="social-icons" name="logo-instagram"></ion-icon
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="footer-link"
-                ><ion-icon class="social-icons" name="logo-facebook"></ion-icon
-              ></a>
-            </li>
-            <li>
-              <a href="#" class="footer-link"
-                ><ion-icon class="social-icons" name="logo-twitter"></ion-icon
-              ></a>
+              <a href="#projects-section" class="nav-elements nav-cta"
+                >Projects</a
+              >
             </li>
           </ul>
+        </nav>
 
-          <p class="copyright">
-            Copyright &copy; 2027 by Ominifood, Inc. All Rights reserved .
-          </p>
-    </footer>
-</body>
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </header>
+
+      <main>
+        <section class="section-hero">
+          <div class="hero">
+            <div class="hero-text-box">
+              <h1 class="heading-primary">Hello, I am Aman Khare</h1>
+              <p class="hero-description">
+                An engineering grad, learning development right now and building
+                projects.
+              </p>
+              <a href="#about-section" class="btn btn-cta"
+                ><span>
+                  learn more<!-- &darr;--><ion-icon
+                    name="arrow-down-outline"
+                    class="down-arrow"
+                  ></ion-icon></span
+              ></a>
+            </div>
+
+            <div class="hero-image-box">
+              <img
+                src="/images/linkedin dp (2) cropped.jpg"
+                alt="hero-image"
+                class="hero-img"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="section-about-us" id="about-section">
+          <div class="">
+            <h2 class="heading-secondary heading-sec-underline">About Me</h2>
+            <p class="about-tagline">
+              Here you will find some information about me such as what I do
+              where I work what my skills are.
+            </p>
+            <div class="grid grid--2--cols grid-about-us">
+              <h2 class="heading-teritary know-me">Get to know me!</h2>
+              <h2 class="heading-teritary skill-heading">Skills</h2>
+
+              <div class="description-box">
+                <p class="brief-description">
+                  <span>👋 </span> Hello, Nice to meet you.<br />
+                  I am a Frontend web developer, I build websites and web
+                  application because I like to create stuff specially where
+                  both building and design comes together, Check some of my work
+                  in projects section.<br />
+                  <br />
+                  I also like to write and share content in the form of blog
+                  posts, You can check in blogs section.<br />
+                  Usually I write about the Web development technologies,
+                  languages, new trends in the industry, etc. <br />
+                  that can help people from the dev community. <br />
+                  Feel free to connect and follow me on linkedIn and Twitter as
+                  well. <br />
+                  Right now I open for the job oppourtunities related to
+                  front-end developement where i can contribute, learn and grow
+                  as well.
+                  <br />
+                  If you have an oppourtunity which matches my current
+                  skillsets, Then feel free to contact me.
+                </p>
+
+                <a href="#" class="btn btn-contact"
+                  ><span>
+                    contact me<ion-icon
+                      name="arrow-down-outline"
+                      class="down-arrow"
+                    ></ion-icon></span
+                ></a>
+              </div>
+
+              <div class="skills-box">
+                <!--     <h3 class="skill0">My Skills</h3>-->
+                <p class="skill skill1">#html</p>
+                <p class="skill skill2">#css</p>
+                <p class="skill skill3">#React</p>
+                <p class="skill skill4">#javascript</p>
+                <p class="skill skill5">#Redux</p>
+                <p class="skill skill6">#Git</p>
+                <p class="skill skill7">#Github</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-projects" id="projects-section">
+          <div class="container">
+            <h2 class="heading-secondary heading-sec-underline">Projects</h2>
+            <p class="project-tagline">
+              Here you will find some of my recent work which i have done in the
+              area of developement.
+            </p>
+            <div class="projects grid grid--2--cols">
+              <div class="project-image">
+                <img
+                  src="/images/traffic-sign-ge4b75f6ef_640.png"
+                  alt="no image for right now"
+                  class="project-img"
+                />
+              </div>
+
+              <div class="project-desc">
+                <p class="description-project">
+                  No projects for right now will be uploading the links as soon
+                  these are made, Thank you for visiting.
+                </p>
+                <a href="#" class="btn btn-visit"
+                  ><span>
+                    visit<ion-icon
+                      name="arrow-forward-outline"
+                      class="down-arrow"
+                    ></ion-icon></span
+                ></a>
+              </div>
+
+              <div class="project-desc">
+                <p class="description-project">
+                  No projects for right now will be uploading the links as soon
+                  these are made, Thank you for visiting.
+                </p>
+                <a href="#" class="btn btn-visit"
+                  ><span>
+                    visit<ion-icon
+                      name="arrow-forward-outline"
+                      class="down-arrow"
+                    ></ion-icon></span
+                ></a>
+              </div>
+
+              <div class="project-image">
+                <img
+                  src="/images/traffic-sign-ge4b75f6ef_640.png"
+                  alt="no image for right now"
+                  class="project-img"
+                />
+              </div>
+
+              <div class="project-image">
+                <img
+                  src="/images/traffic-sign-ge4b75f6ef_640.png"
+                  alt="no image for right now"
+                  class="project-img"
+                />
+              </div>
+
+              <div class="project-desc">
+                <p class="description-project">
+                  No projects for right now, will be uploading the links as soon
+                  these are made, Thank you for visiting.
+                </p>
+                <a href="#" class="btn btn-visit"
+                  ><span>
+                    visit<ion-icon
+                      name="arrow-forward-outline"
+                      class="down-arrow"
+                    ></ion-icon></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-contact" id="contact-section">
+          <div class="container">
+            <h2 class="heading-secondary heading-sec-underline">Contact me</h2>
+            <p class="conatact-tagline">
+              Feel free to contact me by simply pushing the send button below. I
+              will get back to you as soon as possible.
+            </p>
+
+            <div class="contact-cta">
+              <form action="#" class="cta">
+                <div>
+                  <label for="Full-Name">Full Name</label>
+                  <input
+                    id="Full-Name"
+                    type="text"
+                    placeholder="Aman Khare"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="email">Email Address</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="me@example.com"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="text">Message</label>
+                  <input
+                    id="msg"
+                    type="text"
+                    placeholder="I will reach to you as soon as possible"
+                    required
+                  />
+                </div>
+
+                <button class="btn btn--form">
+                  <span
+                    >send<ion-icon name="send" class="send-arrow"></ion-icon
+                  ></span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <a href="#" class="footer-logo">
+          <img
+            src="/images/linkedin dp (2) cropped.jpg"
+            alt="footer-logo"
+            class="logo-img-2"
+          />
+          <span class="logo-text">aman khare</span>
+        </a>
+
+        <p class="footer-tagline">Thank you for visiting</p>
+
+        <ul class="social-links">
+          <li>
+            <a href="#" class="footer-link"
+              ><ion-icon class="social-icons" name="logo-instagram"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="footer-link"
+              ><ion-icon class="social-icons" name="logo-facebook"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="footer-link"
+              ><ion-icon class="social-icons" name="logo-twitter"></ion-icon
+            ></a>
+          </li>
+        </ul>
+
+        <p class="copyright">
+          Copyright &copy;<span class="year">2027</span> by Ominifood, Inc. All
+          Rights reserved .
+        </p>
+      </footer>
+    </body>
+  </div>
 </html>
